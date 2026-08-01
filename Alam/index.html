@@ -1,367 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আলম ট্রেডার্স & এনি পোল্ট্রি এন্ড ফিশ ফিড সেন্টার | ডিজিটাল ভিজিটিং কার্ড</title>
-    
-    <!-- 100% Free & Reliable Public CDNs -->
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts (Noto Sans Bengali) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons (cdnjs CDN) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- QRCode.js Client-side Library (cdnjs CDN - No paid API required) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7OffLzfSCwgubczzc6YMQntORXfBDfOTOJX83ut52ZZ0UKLtUuhggdhCREXDXBqGPbhriSlcEeeXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>শাহারিয়ার আলম — পোর্টফোলিও</title>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            800: '#0f172a',
-                            900: '#0b1329',
-                            950: '#050a17',
-                        },
-                        gold: {
-                            400: '#fbbf24',
-                            500: '#f59e0b',
-                            600: '#d97706',
-                        }
-                    },
-                    fontFamily: {
-                        bengali: ['"Noto Sans Bengali"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Noto Sans Bengali', sans-serif;
-            background-color: #050a17;
-            background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #050a17 70%);
-        }
-        .card-shadow {
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.1);
-        }
-    </style>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts (Noto Sans Bengali) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html,body { height:100%; }
+    body {
+      font-family: 'Noto Sans Bengali', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: radial-gradient(circle at 10% 10%, #071029 0%, #050812 35%, #02040a 100%);
+      color: #edf2f7;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); backdrop-filter: blur(6px); }
+  </style>
 </head>
-<body class="min-h-screen text-slate-200 flex flex-col items-center justify-center p-3 sm:p-6">
+<body class="min-h-screen flex items-center justify-center p-6">
+  <main class="w-full max-w-4xl mx-auto">
+    <div class="glass border border-white/6 rounded-3xl overflow-hidden shadow-2xl">
 
-    <!-- Main Card Container -->
-    <div class="w-full max-w-md bg-navy-900 border border-slate-800 rounded-3xl overflow-hidden card-shadow relative my-4">
-        
-        <!-- Header Decoration -->
-        <div class="h-3 bg-gradient-to-r from-amber-600 via-gold-400 to-amber-600"></div>
-
-        <!-- Bismillah Header -->
-        <div class="text-center pt-6 pb-2 px-4 border-b border-slate-800/80 bg-navy-950/50">
-            <p class="text-amber-400 font-bold text-lg sm:text-xl tracking-wide">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-            <p class="text-slate-400 text-xs mt-1">বিসমিল্লাহির রহমানির রহিম</p>
+      <!-- Header -->
+      <header class="px-6 py-5 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-lg bg-amber-400/30 flex items-center justify-center text-amber-200 font-extrabold">
+            SA
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">শাহারিয়ার আলম</h1>
+            <p class="text-xs text-slate-300">Frontend Developer • UI/UX • Web</p>
+          </div>
         </div>
 
-        <div class="p-5 sm:p-6 space-y-5">
+        <nav class="hidden sm:flex items-center gap-3 text-sm">
+          <a href="#projects" class="text-slate-300 hover:text-white">প্রকল্প</a>
+          <a href="#skills" class="text-slate-300 hover:text-white">দক্ষতা</a>
+          <a href="#contact" class="text-slate-300 hover:text-white">যোগাযোগ</a>
+          <a href="https://github.com/shahariaraj222" target="_blank" rel="noopener" class="ml-3 px-3 py-1 rounded-md bg-amber-500 text-slate-900 font-semibold">GitHub</a>
+        </nav>
+      </header>
 
-            <!-- Primary Business: Alam Traders -->
-            <div class="bg-slate-800/40 border border-amber-500/20 rounded-2xl p-4 text-center relative overflow-hidden group hover:border-amber-500/40 transition">
-                <div class="inline-flex items-center justify-center w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-xl mb-2 text-amber-400">
-                    <i class="fa-solid font-bold text-xl fa-store"></i>
-                </div>
-                <h1 class="text-2xl font-extrabold text-white tracking-tight">আলম ট্রেডার্স</h1>
-                <p class="text-xs sm:text-sm text-amber-300 font-medium mt-1">মুদি, চাউল ও ভূষা মালামালের পাইকারী ও খুচরা আড়ত</p>
+      <div class="px-6 pb-8">
+        <!-- Hero -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-3">
+          <div>
+            <p class="text-sm text-amber-300 font-medium">হ্যালো — আমি</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">শাহারিয়ার আলম<br class="hidden sm:block"> ওয়েব ডেভেলপার</h2>
+            <p class="mt-4 text-slate-300 max-w-xl">
+              দ্রুত, সুন্দর ও অ্যাক্সেসিবল ওয়েব ইন্টারফেস বানাই। এখানে আমার কাজ, দক্ষতা এবং যোগাযোগের তথ্য পাবেন — প্রকল্পগুলো পরে দেবেন বললে আমি আপডেট করে দিব।
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#projects" class="inline-flex items-center gap-2 bg-amber-500 text-slate-900 px-4 py-2 rounded-lg font-semibold hover:opacity-95">প্রকল্প দেখুন</a>
+              <a href="#contact" class="inline-flex items-center gap-2 border border-white/8 text-slate-200 px-4 py-2 rounded-lg hover:bg-white/2">যোগাযোগ</a>
+              <a href="#" class="inline-flex items-center gap-2 text-xs text-slate-300 px-3 py-2 rounded-lg border border-white/6">রিজ্যুমে (শীঘ্রই)</a>
             </div>
 
-            <!-- Secondary Business: Ani Poultry -->
-            <div class="bg-slate-800/40 border border-blue-500/20 rounded-2xl p-4 text-center relative overflow-hidden group hover:border-blue-500/40 transition">
-                <div class="inline-flex items-center justify-center w-10 h-10 bg-blue-500/10 border border-blue-500/30 rounded-xl mb-2 text-blue-400">
-                    <i class="fa-solid text-lg fa-wheat-awn"></i>
-                </div>
-                <h2 class="text-lg font-bold text-white">এনি পোল্ট্রি এন্ড ফিশ ফিড সেন্টার</h2>
-                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                    পোল্ট্রি, ফিশ ও ক্যাটল ফিড সহ পোল্ট্রি সামগ্রী, বাচ্চা ও ওষুধের বিশ্বস্ত প্রতিষ্ঠান।
-                </p>
+            <div class="mt-6 flex items-center gap-3 text-slate-300 text-sm">
+              <span class="opacity-80">পাই:</span>
+              <a href="https://github.com/shahariaraj222" target="_blank" class="hover:text-white">GitHub</a>
+              <a href="#" class="hover:text-white">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="p-4 bg-white/4 rounded-xl border border-white/6">
+            <div class="w-full h-56 rounded-md bg-gradient-to-br from-amber-500/10 to-amber-600/5 flex items-center justify-center text-amber-300">
+              <div class="text-center">
+                <div class="w-24 h-24 rounded-full bg-white/6 mx-auto mb-3 flex items-center justify-center text-2xl font-bold">SA</div>
+                <div class="text-xs text-slate-200">ফ্রিল্যান্স ও রিমোট কাজ উপলব্ধ</div>
+              </div>
             </div>
 
-            <!-- Contact Persons -->
-            <div class="space-y-3">
-                <h3 class="text-xs uppercase tracking-wider text-slate-400 font-semibold px-1 flex items-center gap-2">
-                    <i class="fa-solid fa-users text-amber-400"></i> প্রোপ্রাইটর ও পরিচালনায়
-                </h3>
+            <div class="mt-4 grid grid-cols-2 gap-3 text-xs">
+              <div class="p-3 bg-white/3 rounded-md">
+                <div class="text-slate-100 font-semibold">অভিজ্ঞতা</div>
+                <div class="text-amber-300 font-bold">3+ বছর</div>
+              </div>
+              <div class="p-3 bg-white/3 rounded-md">
+                <div class="text-slate-100 font-semibold">ফোকাস</div>
+                <div class="text-amber-300 font-bold">Web & UI</div>
+              </div>
+              <div class="p-3 bg-white/3 rounded-md">
+                <div class="text-slate-100 font-semibold">অবস্থান</div>
+                <div class="text-amber-300 font-bold">বাংলাদেশ</div>
+              </div>
+              <div class="p-3 bg-white/3 rounded-md">
+                <div class="text-slate-100 font-semibold">ভাষা</div>
+                <div class="text-amber-300 font-bold">বাংলা / ইংরাজি</div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <!-- Siddikul Alam -->
-                <div class="bg-navy-950/80 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs bg-amber-500/20 text-amber-300 font-semibold px-2 py-0.5 rounded-full border border-amber-500/30">প্রোপ্রাইটর</span>
-                        </div>
-                        <p class="font-bold text-white mt-1 text-base">মোঃ সিদ্দিকুল আলম (ডন)</p>
-                        <p class="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
-                            <i class="fa-solid fa-phone text-amber-400 text-[10px]"></i> +880 1869-655527
-                        </p>
-                    </div>
-                    <div class="flex gap-1.5">
-                        <a href="tel:+8801869655527" class="w-9 h-9 bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition" title="কল করুন">
-                            <i class="fa-solid fa-phone text-xs"></i>
-                        </a>
-                        <a href="https://wa.me/8801869655527" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-green-600/20 border border-green-500/40 text-green-400 rounded-lg flex items-center justify-center hover:bg-green-600 hover:text-white transition" title="হোয়াটসঅ্যাপ">
-                            <i class="fa-brands fa-whatsapp text-xs"></i>
-                        </a>
-                    </div>
-                </div>
+        <!-- Projects (placeholders to be filled later) -->
+        <section id="projects" class="mt-10">
+          <h3 class="text-lg font-bold">নির্বাচিত প্রকল্প</h3>
+          <p class="text-sm text-slate-300 mt-1">প্রকল্পের তথ্য পরে দিন — আমি সেগুলো যুক্ত করে দিব।</p>
 
-                <!-- Shahariar Alam (With Alternative Number) -->
-                <div class="bg-navy-950/80 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs bg-blue-500/20 text-blue-300 font-semibold px-2 py-0.5 rounded-full border border-blue-500/30">পরিচালনায়</span>
-                        </div>
-                        <p class="font-bold text-white mt-1 text-base">শাহারিয়ার আলম</p>
-                        <p class="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
-                            <i class="fa-solid fa-phone text-blue-400 text-[10px]"></i> +880 1633-331222
-                        </p>
-                        <p class="text-xs text-amber-300 font-medium flex items-center gap-1 mt-1.5 pt-1.5 border-t border-slate-800/80">
-                            <i class="fa-solid fa-mobile-screen text-amber-400 text-[11px]"></i> বিকল্প নম্বর: +880 1613-295939
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-1.5 justify-center">
-                        <div class="flex gap-1.5">
-                            <a href="tel:+8801633331222" class="w-8 h-8 bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition" title="কল করুন">
-                                <i class="fa-solid fa-phone text-xs"></i>
-                            </a>
-                            <a href="https://wa.me/8801633331222" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-green-600/20 border border-green-500/40 text-green-400 rounded-lg flex items-center justify-center hover:bg-green-600 hover:text-white transition" title="হোয়াটসঅ্যাপ">
-                                <i class="fa-brands fa-whatsapp text-xs"></i>
-                            </a>
-                        </div>
-                        <a href="tel:+8801613295939" class="bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 rounded-lg text-[10px] py-1 text-center font-semibold transition" title="বিকল্প নম্বরে কল">
-                            বিকল্প কল
-                        </a>
-                    </div>
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <article class="p-4 rounded-xl bg-white/3 border border-white/6">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <h4 class="font-semibold">প্রকল্প ১ (শিরোনাম দিন)</h4>
+                  <p class="text-xs text-slate-300 mt-1">শর্ট বর্ণনা এখানে থাকবে</p>
                 </div>
+                <div class="text-xs text-amber-300 font-semibold">লাইভ</div>
+              </div>
+              <div class="mt-3 flex items-center gap-2 text-xs">
+                <a href="#" class="text-slate-200 hover:underline">ডেমো</a>
+                <span class="text-slate-400">•</span>
+                <a href="#" class="text-slate-200 hover:underline">সোর্স</a>
+              </div>
+            </article>
+
+            <article class="p-4 rounded-xl bg-white/3 border border-white/6">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <h4 class="font-semibold">প্রকল্প ২ (শিরোনাম দিন)</h4>
+                  <p class="text-xs text-slate-300 mt-1">শর্ট বর্ণনা এখানে থাকবে</p>
+                </div>
+                <div class="text-xs text-amber-300 font-semibold">ওপেন</div>
+              </div>
+              <div class="mt-3 flex items-center gap-2 text-xs">
+                <a href="#" class="text-slate-200 hover:underline">ডেমো</a>
+                <span class="text-slate-400">•</span>
+                <a href="#" class="text-slate-200 hover:underline">সোর্স</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mt-10">
+          <h3 class="text-lg font-bold">দক্ষতা</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">HTML</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">CSS</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">Tailwind CSS</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">React</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">Accessibility</span>
+            <span class="px-3 py-1 rounded-full bg-white/4 text-xs">Responsive Design</span>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mt-10">
+          <h3 class="text-lg font-bold">যোগাযোগ</h3>
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-white/3 border border-white/6">
+              <p class="text-sm text-slate-300">ইমেইল</p>
+              <a href="mailto:you@example.com" class="block mt-2 font-semibold">you@example.com</a>
+
+              <p class="text-sm text-slate-300 mt-4">ফোন</p>
+              <a href="tel:+8801633331222" class="block mt-2 font-semibold">+880 1633-331222</a>
+
+              <p class="text-sm text-slate-300 mt-4">সামাজিক</p>
+              <div class="mt-2 flex gap-3">
+                <a href="https://github.com/shahariaraj222" target="_blank" class="text-slate-200">GitHub</a>
+                <a href="#" class="text-slate-200">LinkedIn</a>
+                <a href="#" class="text-slate-200">Twitter</a>
+              </div>
             </div>
 
-            <!-- Support Info -->
-            <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-3 text-xs">
-                <div class="flex items-center justify-between text-slate-300">
-                    <span class="text-slate-400 flex items-center gap-1.5">
-                        <i class="fa-solid fa-headset text-emerald-400"></i> সার্বক্ষণিক সহযোগিতা:
-                    </span>
-                    <a href="tel:+8801633331200" class="font-semibold text-emerald-400 hover:underline">+880 1633-331200</a>
-                </div>
-            </div>
+            <form id="contactForm" class="p-4 rounded-xl bg-white/3 border border-white/6" onsubmit="submitForm(event)">
+              <label class="text-xs text-slate-300">আপনার নাম</label>
+              <input id="name" class="w-full mt-2 p-2 rounded-md bg-transparent border border-white/6 text-white text-sm" placeholder="আপনার নাম" required>
 
-            <!-- Payment Options: bKash & Nagad -->
-            <div class="bg-slate-900/70 border border-slate-800/80 rounded-2xl p-3.5 text-center space-y-2">
-                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider flex items-center justify-center gap-1.5">
-                    <i class="fa-solid fa-wallet text-amber-400"></i> পেমেন্ট সুবিধা (বিকাশ ও নগদ)
-                </p>
-                <div class="grid grid-cols-2 gap-2.5 pt-1">
-                    <!-- bKash -->
-                    <div class="bg-[#e2136e]/10 border border-[#e2136e]/30 rounded-xl p-2.5 flex items-center justify-center gap-2 hover:bg-[#e2136e]/20 transition">
-                        <div class="w-6 h-6 rounded-lg bg-[#e2136e] flex items-center justify-center text-white font-extrabold text-xs shadow-md">
-                            ব
-                        </div>
-                        <div class="text-left">
-                            <p class="font-bold text-[#f43f5e] text-xs leading-none">bKash</p>
-                            <p class="text-[10px] text-slate-300 font-medium mt-0.5">বিকাশ পেমেন্ট</p>
-                        </div>
-                    </div>
+              <label class="text-xs text-slate-300 mt-3 block">আপনার ইমেইল</label>
+              <input id="email" type="email" class="w-full mt-2 p-2 rounded-md bg-transparent border border-white/6 text-white text-sm" placeholder="you@example.com" required>
 
-                    <!-- Nagad -->
-                    <div class="bg-[#f7931e]/10 border border-[#f7931e]/30 rounded-xl p-2.5 flex items-center justify-center gap-2 hover:bg-[#f7931e]/20 transition">
-                        <div class="w-6 h-6 rounded-lg bg-[#f7931e] flex items-center justify-center text-white font-extrabold text-xs shadow-md">
-                            ন
-                        </div>
-                        <div class="text-left">
-                            <p class="font-bold text-[#fb923c] text-xs leading-none">Nagad</p>
-                            <p class="text-[10px] text-slate-300 font-medium mt-0.5">নগদ পেমেন্ট</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <label class="text-xs text-slate-300 mt-3 block">বার্তা</label>
+              <textarea id="message" rows="4" class="w-full mt-2 p-2 rounded-md bg-transparent border border-white/6 text-white text-sm" placeholder="হাই, আমি জানতে চাই ..."></textarea>
 
-            <!-- Address Text -->
-            <div class="bg-slate-800/30 border border-slate-800 rounded-2xl p-4 text-center">
-                <div class="inline-flex items-center justify-center w-8 h-8 bg-amber-500/10 rounded-full text-amber-400 mb-2">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <h4 class="text-xs font-semibold uppercase text-slate-400 tracking-wider">প্রতিষ্ঠানের ঠিকানা</h4>
-                <p class="text-sm font-medium text-slate-200 mt-1 leading-relaxed">
-                    মাছ বাজারের উত্তর পাশে, হাইস্কুল রোড,<br>
-                    লামাবাজার, লামা পৌরসভা, বান্দরবান।
-                </p>
-            </div>
-
-            <!-- Interactive Google Map Section (Official & Reliable Free Links) -->
-            <div class="bg-slate-800/30 border border-slate-800 rounded-2xl p-3 space-y-3">
-                <div class="flex items-center justify-between text-xs px-1">
-                    <span class="text-slate-300 font-semibold flex items-center gap-1.5">
-                        <i class="fa-solid fa-map-location-dot text-amber-400"></i> ম্যাপে আমাদের অবস্থান
-                    </span>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Lama+Bazar+High+School+Road+Lama+Bandarban" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline flex items-center gap-1 text-[11px]">
-                        বড় ম্যাপে দেখুন <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
-                    </a>
-                </div>
-                
-                <!-- Reliable Embed Google Map -->
-                <div class="w-full h-44 rounded-xl overflow-hidden border border-slate-700/60 relative">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Lama%20Bazar%20High%20School%20Road%20Lama%20Bandarban&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <!-- Official Google Navigation Link -->
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Lama+Bazar+High+School+Road+Lama+Bandarban" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition active:scale-95 shadow-md">
-                    <i class="fa-solid fa-diamond-turn-right text-emerald-400 text-sm"></i> গুগল ম্যাপে নেভিগেশন শুরু করুন
-                </a>
-            </div>
-
-            <!-- Quick Action Buttons -->
-            <div class="grid grid-cols-2 gap-2.5">
-                <button onclick="downloadVCard()" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition active:scale-95">
-                    <i class="fa-solid fa-address-book text-sm"></i> কনট্যাক্ট সেভ করুন
-                </button>
-                <button onclick="toggleQRModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 transition active:scale-95">
-                    <i class="fa-solid fa-qrcode text-amber-400 text-sm"></i> QR কোড দেখুন
-                </button>
-            </div>
-
-        </div>
+              <button type="submit" class="mt-4 inline-flex items-center gap-2 bg-amber-500 text-slate-900 px-4 py-2 rounded-lg font-semibold">পাঠান</button>
+            </form>
+          </div>
+        </section>
 
         <!-- Footer -->
-        <div class="bg-navy-950 px-4 py-3 text-center border-t border-slate-800/80 text-[11px] text-slate-500 flex justify-between items-center">
-            <span>© আলম ট্রেডার্স</span>
-            <button onclick="copyPageUrl()" class="text-amber-400 hover:underline flex items-center gap-1">
-                <i class="fa-regular fa-copy"></i> লিংক কপি করুন
-            </button>
-        </div>
-
+        <footer class="mt-10 border-t border-white/6 pt-6 pb-6 text-sm text-slate-300 flex items-center justify-between">
+          <div>© শাহারিয়ার আলম • তৈরি করা হয়েছে ❤</div>
+          <div class="text-xs text-slate-400">আপনি পরে প্রকল্প তথ্য দিবেন — আমি আপডেট করে দেব।</div>
+        </footer>
+      </div>
     </div>
+  </main>
 
-    <!-- QR Code Modal -->
-    <div id="qrModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
-        <div class="bg-navy-900 border border-slate-700 rounded-3xl p-6 w-full max-w-xs text-center space-y-4 shadow-2xl relative">
-            <button onclick="toggleQRModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white w-8 h-8 flex items-center justify-center rounded-full bg-slate-800">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="text-lg font-bold text-white">স্ক্যান করে শেয়ার করুন</h3>
-            <p class="text-xs text-slate-400">এই QR কোডটি স্ক্যান করলে সরাসরি আপনার এই ডিজিটাল ভিজিটিং কার্ডটি ওপেন হবে।</p>
-            
-            <div class="bg-white p-4 rounded-2xl inline-block shadow-inner mx-auto" id="qrcode"></div>
-
-            <button onclick="toggleQRModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs py-2.5 rounded-xl font-medium transition">
-                বন্ধ করুন
-            </button>
-        </div>
-    </div>
-
-    <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-full shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none z-50 flex items-center gap-2">
-        <i class="fa-solid fa-circle-check"></i> <span id="toastMsg">মেসেজ</span>
-    </div>
-
-    <script>
-        // Generate QR Code dynamically using client-side JavaScript (100% Free & Unlimited)
-        window.addEventListener('DOMContentLoaded', () => {
-            const currentUrl = window.location.href;
-            new QRCode(document.getElementById("qrcode"), {
-                text: currentUrl,
-                width: 180,
-                height: 180,
-                colorDark : "#050a17",
-                colorLight : "#ffffff",
-                correctLevel : QRCode.CorrectLevel.H
-            });
-        });
-
-        // Toggle QR Modal
-        function toggleQRModal() {
-            const modal = document.getElementById('qrModal');
-            if (modal.classList.contains('hidden')) {
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-            } else {
-                modal.classList.remove('flex');
-                modal.classList.add('hidden');
-            }
-        }
-
-        // Copy Page URL to Clipboard
-        function copyPageUrl() {
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(window.location.href).then(() => {
-                    showToast("ডিজিটাল কার্ডের লিংক কপি করা হয়েছে!");
-                }).catch(() => {
-                    fallbackCopyTextToClipboard(window.location.href);
-                });
-            } else {
-                fallbackCopyTextToClipboard(window.location.href);
-            }
-        }
-
-        function fallbackCopyTextToClipboard(text) {
-            const textArea = document.createElement("textarea");
-            textArea.value = text;
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            try {
-                document.execCommand('copy');
-                showToast("ডিজিটাল কার্ডের লিংক কপি করা হয়েছে!");
-            } catch (err) {
-                showToast("লিংক কপি করা সম্ভব হয়নি");
-            }
-            document.body.removeChild(textArea);
-        }
-
-        // Show Toast Notification
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            const toastMsg = document.getElementById('toastMsg');
-            toastMsg.innerText = message;
-            toast.classList.remove('opacity-0');
-            setTimeout(() => {
-                toast.classList.add('opacity-0');
-            }, 2500);
-        }
-
-        // Download vCard (.vcf) directly to phone contacts
-        function downloadVCard() {
-            const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:মোঃ সিদ্দিকুল আলম (ডন) - আলম ট্রেডার্স
-ORG:আলম ট্রেডার্স & এনি পোল্ট্রি এন্ড ফিশ ফিড সেন্টার
-TITLE:প্রোপ্রাইটর
-TEL;TYPE=CELL:+8801869655527
-TEL;TYPE=WORK:+8801633331222
-TEL;TYPE=HOME:+8801613295939
-ADR;TYPE=WORK:;;মাছ বাজারের উত্তর পাশে হাইস্কুল রোড লামাবাজার;লামা;বান্দরবান;;বাংলাদেশ
-NOTE:মুদি, চাউল, ভূষা মালামাল এবং পোল্ট্রি ও ফিশ ফিড এর পাইকারী ও খুচরা আড়ত
-END:VCARD`;
-
-            const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8;' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.setAttribute('download', 'Alam_Traders_Contact.vcf');
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            showToast("কনট্যাক্ট ফাইল ডাউনলোড হয়েছে!");
-        }
-    </script>
+  <script>
+    // Contact form: opens mailto as simple fallback
+    function submitForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('পোর্টফোলিও যোগাযোগ — ' + name);
+      const body = encodeURIComponent(message + "\n\n--\n" + name + " (" + email + ")");
+      window.location.href = `mailto:you@example.com?subject=${subject}&body=${body}`;
+    }
+  </script>
 </body>
 </html>
